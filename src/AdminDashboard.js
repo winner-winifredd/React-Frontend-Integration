@@ -8,6 +8,7 @@ const AdminDashboard = () => {
     const [selectedRows, setSelectedRows] = useState([]);
     const [editingRow, setEditingRow] = useState(null);
 
+
     useEffect(() => {
         fetchData();
     }, []);
@@ -28,7 +29,6 @@ const AdminDashboard = () => {
                 )
             )
             .slice(startIndex, endIndex);
-
         return (
             <tbody>
             {displayedData.map(row => (
